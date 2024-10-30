@@ -1,8 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
 
+const currentYear = new Date().getFullYear(); //декларативный
+
 export const App = () => {
+	//императивный
 	return (
+		//декларативный
 		<div className="App">
 			<header className="App-header">
 				<img src={logo} className="App-logo" alt="logo" />
@@ -17,8 +21,8 @@ export const App = () => {
 				>
 					Learn React
 				</a>
+				<p>{currentYear}</p>
 			</header>
 		</div>
 	);
 };
-
